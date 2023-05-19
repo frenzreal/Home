@@ -1,47 +1,70 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.25em;
   color: #40514E;
 }
 
 h1 {
-  margin: 50px auto 0;
-  font-size: 5rem;
-  font-family: 'Dancing Script', cursive;
-  color: #66BFBF;
-  line-height: 2;
+  margin: 0 auto;
+  font-size: 8rem;
+  font-family: 'Caveat', cursive;
+  color: #fff;
 }
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Caveat, cursive;
   font-size: 2.5rem;
-  color: #66BFBF;
-  font-weight: normal;
+  color: #3973cb;
+  font-weight: bolder;
 }
 h3 {
   font-family: 'Montserrat', sans-serif;
-  color: #11999E;
+  color: #3973cb;
 }
 
 hr {
   width: 5%;
   border-style: dotted none none;
-  border-color: #11999E;
+  border-color: #3973cb;
   border-width: 10px;
 }
 
 .display-photo {
-  width: 12.5%;
+  width: 18%;
   border-radius: 100%;
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #3973cb, #65c9e9) border-box;
   border: 6px solid transparent;
+  position: absolute;
+  bottom: -20%;
+  right: 20px;
 }
 
 .top-container {
-  background-color: #E4F9F5;
   position: relative;
-  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../Images/mountains.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.top-inner {
+  width: 75%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-inner h2 {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
 }
 
 .top-cloud {
@@ -55,11 +78,11 @@ hr {
   bottom: 300px;
 }
 a {
-  color: #11999E;
+  color: #65c9e9;
 }
 
 .skills {
-  background-color: #E4F9F5;
+  background-color: #65c9e9;
   padding-bottom: 6.5rem;
   padding-top: 3.5rem;
 }
@@ -73,27 +96,27 @@ a {
 .skills-img-code {
   width: 25%;
   border-radius: 100%;
-  border: solid 5px;
-  border-color: #11999E;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #3973cb, #34A8E3) border-box;
+  border: 6px solid transparent;
   float: left;
   margin-right: 30px;
 }
 .skills-img-analytics {
   width: 25%;
   border-radius: 100%;
-  border: solid 5px;
-  border-color: #11999E;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #3973cb, #34A8E3) border-box;
+  border: 6px solid transparent;
   float: right;
   margin-left: 30px;
 }
 
 .btn {
   background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  background-image: -webkit-linear-gradient(left, #3973cb, #34A8E3);
+  background-image: -moz-linear-gradient(left, #3973cb, #34A8E3);
+  background-image: -ms-linear-gradient(left, #3973cb, #34A8E3);
+  background-image: -o-linear-gradient(left, #3973cb, #34A8E3);
+  background-image: linear-gradient(to right, #3973cb, #34A8E3);
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
@@ -102,22 +125,29 @@ a {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  margin: 65px auto 0;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
 }
 
 .btn:hover {
   background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  background-image: -webkit-linear-gradient(left, #34A8E3, #32CCD9);
+  background-image: -moz-linear-gradient(left, #34A8E3, #32CCD9);
+  background-image: -ms-linear-gradient(left, #34A8E3, #32CCD9);
+  background-image: -o-linear-gradient(left, #34A8E3, #32CCD9);
+  background-image: linear-gradient(to right, #34A8E3, #32CCD9);
   text-decoration: none;
 }
 .bottom-container{
-  background-color: #66BFBF;
+  background-color: #3973cb;
   margin: 0;
   height: 150px;
-  margin-top: 100px;
   padding-top: 70px;
 }
 .copyright {
@@ -127,20 +157,45 @@ a {
   font-size: 1rem;
 }
 .footer-link {
-  color: #11999E;
+  color: #65c9e9;
   text-decoration: none;
   margin: 0 20px;
   font-weight: bold;
 }
+.profile-container {
+  background-color: #fff;
+  padding: 100px 0;
+}
 .profile {
+  display: flex;
   margin: 100px auto;
+  max-width: 800px;
+  width: 75%;
+  height: 300px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.1);
+  padding: 40px 70px 70px;
+  border-radius: 10px;
+  background: linear-gradient(#F8F8F8, #F8F8F8) padding-box, linear-gradient(to right, #3973cb, #65c9e9) border-box;
+  border: 6px solid transparent;
+  position: relative;
 }
 .profile-intro {
-  width: 40%;
+  font-size: 18px;
+  line-height: 1.8;
   margin: auto;
-  padding-top: 100px;
 }
+
+.profile h2 {
+  position: absolute;
+  top: -28%;
+  left: 24px;
+  font-size: 5rem;
+  background-image: linear-gradient(to top, #f8f8f8, #ffffff);
+  width: 300px;
+}
+
 .contact-me {
   padding-bottom: 6.5rem;
   padding-top: 3.5rem;
+  background-color: #fff;
 }
